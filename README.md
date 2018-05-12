@@ -1,5 +1,7 @@
 This exercise project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) (non-ejected), with added node-sass-chokidar as scss loader.
 
+https://hubspot-tribe-landing.herokuapp.com/ - see deployed copy
+
 Installing
 1. npm install
 2. npm run start
