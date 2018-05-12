@@ -1,0 +1,21 @@
+.campaign-wrapper {
+  margin: 10px auto 54.3px auto;
+  text-align: center;
+  .btn.campaign {
+    font-size: 22px;
+    line-height: 1.27;
+    letter-spacing: 2px;
+  }
+
+  @include breakpoint(small){
+    .sticky {
+      background: $bg-base;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      margin: 0;
+      padding: 18.2px 0 19px 0;
+    }
+  }
+  
+}

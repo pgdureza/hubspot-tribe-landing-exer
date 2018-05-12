@@ -4,7 +4,11 @@ header {
   color: $color-inverted;
   box-sizing: border-box;
   .header-row {
-    padding: 22px 0 34.5px;
+    padding: 22px 0 0;
+
+    .video-wrapper {
+      margin-top: 35.5px;
+    }
   }
   .logo {
     width: 163px;
@@ -54,7 +58,7 @@ header {
     .sign-up-wrapper {
       text-align: left;
     }
-    
+
     .logo {
       margin-bottom: 47px;
     }
@@ -67,7 +71,12 @@ header {
   
       .header-column {
         width: 50%;
-        max-width: 508.8px;
+        &.video-wrapper {
+          margin-top: 0;
+        }
+        p {
+          max-width: 508.8px;
+        }
       }
     }
   }

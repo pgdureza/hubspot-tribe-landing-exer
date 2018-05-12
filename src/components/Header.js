@@ -6,9 +6,9 @@ export default () => {
   return (
     <header>
       <div className="overlay"> 
-        <div className="inner-width inner-width-mobile">
+        <div className="inner-width">
           <div className="header-row">
-            <div className="header-column">
+            <div className="header-column inner-width-mobile">
               <Image className="logo" 
                 src={'https://offers.tribegroup.co/hs-fs/hubfs/AALandingPages/Template%20Asset/TRIBE%20Logo%201000x309.png'} 
                 widths={[160, 320]}/>

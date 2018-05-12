@@ -26,7 +26,6 @@ export class CaseStudies extends Component {
           ))}
           {!this.state.showMore && <a href="/" className="load-more" onClick={this.clickHandler.bind(this)}> Load More </a>}
         </div>
-        <a href="/" className="btn inverted campaign"> Create a Campaign </a>
       </section>
     )
   }
