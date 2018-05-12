@@ -1,0 +1,12 @@
+footer {
+  text-align: center;
+  background-color: $bg-color-subdued;
+  padding: 23.5px;
+  span {
+    font-size: 10px;
+    line-height: 2.8;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: $color-body-lighter;
+  }
+}

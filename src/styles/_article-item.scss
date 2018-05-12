@@ -1,0 +1,21 @@
+.article-item {
+  margin: 71px 0;
+  img {
+    width: 100%;
+  }
+
+  h2, p {
+    margin: 33.2px 0;
+  }
+
+  .row {
+    justify-content: flex-start;
+    .column{
+      text-align: center;
+      &.text-wrapper {
+        width: 36%;
+        padding-left: 52px;
+      }
+    }
+  }
+}

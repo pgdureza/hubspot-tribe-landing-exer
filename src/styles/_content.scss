@@ -1,0 +1,27 @@
+.main-content {
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .column {
+      width: 47%;
+    }
+
+  }
+
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 34px 0;
+  }
+
+  p {
+    color: $color-body-lighter;
+  }
+
+  img {
+    width: 100%;
+  }
+
+}

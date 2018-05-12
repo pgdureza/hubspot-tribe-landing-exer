@@ -1,0 +1,49 @@
+header {
+  background-image: url('https://offers.tribegroup.co/hubfs/AALandingPages/Creator%20-%20Content%20Only/kuan-fang-254086-unsplash-edit-8.jpg?t=1526023615233');
+  background-size: cover;
+  color: $color-inverted;
+  box-sizing: border-box;
+  .logo {
+    width: 163px;
+    margin-bottom: 47px;
+    display: block;
+  }
+  h1 {
+    margin: 40px 0;
+  }
+  h2 {
+    margin: 34px 0;
+  }
+  p {
+    margin: 34px 0;
+  }
+
+  .sign-up {
+    line-height: 1.56;
+    letter-spacing: 2.5px;
+
+    span {
+      padding-right: 12px;
+      display: block;
+    }
+  }
+
+  .overlay {
+    background-color: rgba(248, 72, 196, 0.9);
+  }
+
+  .header-row {
+    padding: 95.8px 0 69.5px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+
+    .header-column {
+      width: 50%;
+      max-width: 508.8px;
+    }
+
+  }
+
+}
+  

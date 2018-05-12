@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.inner-width {
+  max-width: 1170px;
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $color-highlight;
+}
+
+.btn {
+  transition: all .2s ease-in;
+  border: 1px solid;
+  text-transform: uppercase;
+  padding: 6.9px 26.2px 6.2px;
+  border-radius: 21.5px;
+  display: inline-block;
+  &:not(.inverted) {
+    color: $color-highlight;
+    background-color: $color-inverted;
+    border-color: $color-inverted;
+    &.outlined {
+      border-color: $color-highlight;
+    }
+    &:hover {
+      color: $color-inverted;
+      background-color: $color-highlight;
+    }
+  }
+  &.inverted {
+    color: $color-inverted;
+    background-color: $color-highlight;
+    border-color: $color-highlight;
+    &:hover {
+      color: $color-highlight;
+      background-color: $color-inverted;
+    }
+  }
+}
