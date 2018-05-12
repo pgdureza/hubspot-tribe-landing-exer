@@ -1,12 +1,58 @@
 .featured-article {
   background-color: $bg-color-subdued;
-
+  padding: 35px 0;
   p {
     margin: 33.9px 0 32.8px 0;
   }
 
-  .column {
-    margin: 71px 0;
+  .watch-now-wrapper {
+    display: block;
+    text-align: center;
+    width: 100%;
   }
-  
+
+  .watch-now {
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 2.5px;
+  }
+
+  @include breakpoint(medium-up){
+    padding: 0;
+    .watch-now-wrapper {
+      text-align: left;
+    }
+    .row {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      box-sizing: content-box;
+      max-height: 417px;
+      height: 45vw;
+      padding: 71px 0;
+      .column {
+        &.feature-image-wrapper {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          order: 0;
+        }
+        &.header-wrapper, &.subheader-wrapper {
+          margin-left: 33px;
+          h2 {
+            margin: 0;
+          }
+        }
+        &.header-wrapper {
+          order: 1;
+          margin-bottom: 0;
+        }
+        &.subheader-wrapper {
+          order: 3;
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }

@@ -16,19 +16,38 @@ h1 {
 
 h2 {
   font-size: 25px;
-  line-height: normal;
+  line-height: 1.32;
   letter-spacing: 1px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 3.95;
-  letter-spacing: 11.4px;
+  line-height: 4.94;
+  letter-spacing: 9.1px;
 }
 
 p {
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.79;
   letter-spacing: 0.6px;
+}
+
+@include breakpoint(medium-up){
+  h2 {
+    font-size: 25px;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 3.95;
+    letter-spacing: 11.4px;
+  }
+  
+  p {
+    line-height: 2;
+    letter-spacing: 0.6px;
+  }
 }

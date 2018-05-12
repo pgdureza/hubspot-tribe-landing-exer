@@ -3,19 +3,27 @@ header {
   background-size: cover;
   color: $color-inverted;
   box-sizing: border-box;
+  .header-row {
+    padding: 22px 0 34.5px;
+  }
   .logo {
     width: 163px;
-    margin-bottom: 47px;
     display: block;
   }
   h1 {
-    margin: 40px 0;
+    margin: 24.7px 0;
   }
   h2 {
-    margin: 34px 0;
+    margin: 24.7px 0;
   }
   p {
-    margin: 34px 0;
+    margin: 26px 0;
+  }
+
+  .sign-up-wrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 
   .sign-up {
@@ -32,17 +40,36 @@ header {
     background-color: rgba(248, 72, 196, 0.9);
   }
 
-  .header-row {
-    padding: 95.8px 0 69.5px;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-
-    .header-column {
-      width: 50%;
-      max-width: 508.8px;
+  @include breakpoint(medium-up){
+    h1 {
+      margin: 40px 0;
+    }
+    h2 {
+      margin: 34px 0;
+    }
+    p {
+      margin: 34px 0;
     }
 
+    .sign-up-wrapper {
+      text-align: left;
+    }
+    
+    .logo {
+      margin-bottom: 47px;
+    }
+    
+    .header-row {
+      padding: 95.8px 0 69.5px;
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+  
+      .header-column {
+        width: 50%;
+        max-width: 508.8px;
+      }
+    }
   }
 
 }

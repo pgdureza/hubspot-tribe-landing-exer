@@ -1,19 +1,10 @@
 .main-content {
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .column {
-      width: 47%;
-    }
-
-  }
-
   h3 {
     text-align: center;
     text-transform: uppercase;
-    margin: 34px 0;
+    color: $color-body;
+    margin: 0;
   }
 
   p {
@@ -22,6 +13,21 @@
 
   img {
     width: 100%;
+  }
+
+  @include breakpoint(medium-up){
+    h3 {
+      margin: 34px 0;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .column {
+        width: 47%;
+      }
+    }
   }
 
 }

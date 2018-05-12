@@ -1,21 +1,38 @@
-import React from 'react'
+import React, { Component} from 'react'
+import Image from './Image';
+export class CaseStudies extends Component {
+  state = {
+    showMore: false
+  }
 
-export default () => {
-  return (
-    <section className="case-studies">
-      <h3> Case Studies </h3>
-      <div className="cs-wrapper">
-        { articleImages.map((img, index) => (
-          <div className="cs-item" key={index}>
-            <img className="main" src={img.main} alt=""/>
-            <img className="sub" src={img.sub} alt=""/>
-          </div>
-        ))}
-      </div>
-      <a href="/" className="btn inverted"> Create a Campaign </a>
-    </section>
-  )
+  clickHandler(e) {
+    e.preventDefault();
+    this.setState({
+      showMore: true
+    })
+  }
+  
+  render(){
+    const widths=[383, 767, 1150, 1534]
+    return (
+      <section className="case-studies">
+        <h3> Case Studies </h3>
+        <div className={!this.state.showMore ? "show-less cs-wrapper": "cs-wrapper"}>
+          { articleImages.map((img, index) => (
+            <div className={(!this.state.showMore && index >= 5) ? "cs-item extra" : "cs-item"} key={index}>
+              <Image src={img.main} className="main" widths={widths}/>
+              <Image src={img.sub} className="sub" widths={widths}/>
+            </div>
+          ))}
+          {!this.state.showMore && <a href="/" className="load-more" onClick={this.clickHandler.bind(this)}> Load More </a>}
+        </div>
+        <a href="/" className="btn inverted campaign"> Create a Campaign </a>
+      </section>
+    )
+  }
 }
+
+export default CaseStudies;
 
 const articleImages = [
   {

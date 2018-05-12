@@ -6,7 +6,7 @@ export default () => {
   return (
     <header>
       <div className="overlay"> 
-        <div className="inner-width">
+        <div className="inner-width inner-width-mobile">
           <div className="header-row">
             <div className="header-column">
               <Image className="logo" 
@@ -15,9 +15,11 @@ export default () => {
               <h1> H1 Headline </h1>
               <h2> H2 Subline </h2>
               <p> Paragraph Style // Lorem ipsum dolor sit amet, nec no brute nusquam civibus. Cibo essent qui id, in eius antiopam similique nam, at nostrum corrumpit vel. Lorem ipsum dolor sit amet, nec no brute nusquam civibus. Cibo essent qui id, in eius antiopam similique nam, at nostrum. </p>
+              <div className="sign-up-wrapper">
               <a className="btn sign-up" href="https://brand.tribegroup.co/sign-up">
                 <span>Sign Up for Free</span>
               </a>
+              </div>
             </div>
             <div className="header-column video-wrapper">
               <Video />

@@ -1,20 +1,35 @@
 .article-item {
-  margin: 71px 0;
+  margin-bottom: 31.7px;
+  text-align: center;
   img {
     width: 100%;
   }
 
   h2, p {
-    margin: 33.2px 0;
+    margin-top: 27px;
+    margin-bottom: 14px;
   }
 
-  .row {
-    justify-content: flex-start;
-    .column{
-      text-align: center;
-      &.text-wrapper {
-        width: 36%;
-        padding-left: 52px;
+  p {
+    display: none;
+  }
+
+  @include breakpoint(medium-up){
+    margin: 71px 0;
+    p {
+      display: block;
+    }
+    h2, p {
+      margin: 33.2px 0;
+    }
+    .row {
+      justify-content: flex-start;
+      .column{
+        text-align: center;
+        &.text-wrapper {
+          width: 36%;
+          padding-left: 52px;
+        }
       }
     }
   }
