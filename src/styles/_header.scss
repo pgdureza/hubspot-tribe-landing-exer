@@ -6,8 +6,12 @@ header {
   .header-row {
     padding: 22px 0 0;
 
-    .video-wrapper {
+    .media-wrapper {
       margin-top: 35.5px;
+      img {
+        width: 100%;
+        display: block;
+      }
     }
   }
   .logo {
@@ -71,7 +75,7 @@ header {
   
       .header-column {
         width: 50%;
-        &.video-wrapper {
+        &.media-wrapper {
           margin-top: 0;
         }
         p {
